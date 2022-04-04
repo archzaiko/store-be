@@ -1,7 +1,7 @@
 import {IncomingMessage, ServerResponse} from 'http';
 import {Buffer} from 'buffer';
 
-import {AuthModule} from '../auth';
+import {AuthModule} from 'src/auth';
 
 interface LoginRequestBody {
   username: string;

@@ -4,9 +4,9 @@
   "description": "",
   "private": "true",
   "scripts": {
-    "start:dev": "ts-node ./src/index.ts",
-    "start:docker": "docker compose up",
-    "watch": "ts-node-dev --inspect --respawn ./src/index.ts",
+    "start:api": "ts-node ./src/index.ts",
+    "start:db": "docker compose up",
+    "watch:api": "ts-node-dev --require tsconfig-paths/register --respawn src/index.ts",
     "lint": "eslint \"**/*.ts\""
   },
   "files": [
@@ -36,6 +36,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.5.1",
     "ts-node": "^10.7.0",
+    "ts-node-dev": "^1.1.8",
+    "tsconfig-paths": "^3.14.1",
     "typescript": "^4.6.2"
   }
 }
