@@ -5,7 +5,7 @@ const pool = new Pool({
   host: 'localhost',
   database: 'postgres',
   password: process.env.POSTGRES_PASSWORD || 'postgres',
-  port: process.env.POSTGRES_PORT || 5432,
+  port: parseInt(process.env.POSTGRES_PORT) || 5432,
 });
 
 pool.query(

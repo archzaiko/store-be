@@ -1,3 +1,3 @@
-import {listen as listenAPIServer} from './api';
+import {listenApiServer} from './api/api.module';
 
-listenAPIServer();
+listenApiServer();

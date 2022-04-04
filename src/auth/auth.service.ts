@@ -1,6 +1,6 @@
-import {AuthModel} from './model';
+import {AuthModel} from './auth.model';
 
-export class AuthModule {
+export class AuthService {
   private authModel = new AuthModel();
 
   async login(username: string, password: string): Promise<Boolean> | never {
